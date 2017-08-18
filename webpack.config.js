@@ -25,6 +25,12 @@ module.exports = {
         ]
       },
       {
+        test: /\.scss$/,
+        loaders: [
+          'style-loader', 'css-loader', 'scss-loader'
+        ]
+      },
+      {
         test: /\.html$/,
         loader: 'html-loader'
       },
@@ -39,7 +45,8 @@ module.exports = {
   devServer: {
     port: 9000,
     contentBase: path.join(__dirname, 'dist'),
-    compress: true
+    compress: true,
+    inline: true
   },
   plugins: [
     new htmlWebpackPlugin({
