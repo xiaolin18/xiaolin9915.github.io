@@ -8,11 +8,18 @@ nav {
   background: #777;
 }
 
-nav ul li {
+nav ul {
+  float: right;
+}
+
+nav ul li, nav .logo {
   display: inline-block;
   line-height: 50px;
-  float: right;
   margin: 0 15px;
+}
+
+nav .logo a{
+  text-decoration: none;
 }
 
 nav ul li a {
@@ -20,10 +27,7 @@ nav ul li a {
   text-decoration: none;
   display: inline-block;
   height: inherit;
-}
-
-nav ul li.logo {
-  float: left;
+  color: #fff;
 }
 
 #banner .inner {
@@ -58,4 +62,131 @@ button {
 
 #banner .inner .sub-heading {
   line-height: 30px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.logo a {
+  color: #fff;
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  margin: 20px auto;
+}
+
+.sec-one {
+  background: #089d80;
+  text-align: center;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.sec-one .hr {
+  background: #098e9f;
+  width: 60%;
+}
+
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.sec-heading {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.sec-sub-heading {
+  line-height: 40px;
+  margin: 30px auto;
+}
+
+.sec-one .icon-group .icon {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #098e9f;
+  transform: rotate(45deg);
+  margin: 20px;
+}
+
+.sec-one .icon-group {
+  margin-top: 60px;
+}
+
+.sec-two {
+  background: #252f34;
+  color: #fff;
+}
+
+.sec-two .article-pre > div {
+  float: left;
+  /*font-size: 0px;*/
+}
+
+.sec-two .article-pre:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.clear {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.sec-two .img-sec {
+  width: 45%;
+}
+
+.sec-two .img-sec img {
+  width: 100%;
+}
+
+.sec-two .text-sec {
+  width: 55%;
+}
+
+.text-sec {
+  position: relative;
+  left: 20px;
+  top: 68px;
+}
+
+.text-sec .sec-sub-heading {
+  margin: 10px auto;
+  font-size: 22px;
+  margin-top: 0px;
+}
+
+.text-sec p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.sec-three {
+  background: #3f3965;
+  color: #fff;
+  font-size: 16px;
+  padding: 80px;
+}
+
+.sec-three .heading-wrapper {
+  text-align: center;
+}
+
+.sec-three .hr {
+  background: #373259;
+  width: 60%;
+}
+
+.content {
+  font-size: 0;
 }
