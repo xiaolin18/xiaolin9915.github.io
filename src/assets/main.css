@@ -1,11 +1,46 @@
+.main-wrapper {
+  color: #fff;
+  background: #444 url(./img/banner.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 nav {
   height: 50px;
-  background: #ccc;
+  background: transparent;
 }
 
 #banner {
   height: 700px;
-  background: #777;
+  background: transparent;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-size: 30px;
+  padding: 12px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-break: break-all;
+  white-space: normal;
 }
 
 nav ul {
@@ -31,7 +66,7 @@ nav ul li a {
 }
 
 #banner .inner {
-  max-width: 300px;
+  max-width: 350px;
   text-align: center;
   margin: 0 auto;
   position: relative;
@@ -40,28 +75,35 @@ nav ul li a {
 
 button {
   border: none;
-  background: #333;
+  background: #f01414;
   color: #eee;
   padding: 10px;
 }
 
+#banner h2 {
+  padding: 10px;
+}
+
 #banner .inner button {
-  margin-top: 15px;
+  margin-top: 100px;
   padding: 14px 60px;
 }
 
 #banner .inner .more {
-  margin-top: 280px;
+  margin-top: 130px;
 }
 
 #banner .inner .heading {
   line-height: 40px;
-  font-size: 20;
   font-weight: 700;
 }
 
 #banner .inner .sub-heading {
   line-height: 30px;
+}
+
+h1.heading {
+  letter-spacing: 5px;
 }
 
 .logo {
@@ -95,6 +137,7 @@ button {
 .wrapper {
   max-width: 1080px;
   margin: 0 auto;
+  width: 60%;
 }
 
 .sec-heading {
@@ -109,12 +152,22 @@ button {
 }
 
 .sec-one .icon-group .icon {
+  min-width: 80px;
   display: inline-block;
-  width: 80px;
-  height: 80px;
   border: 1px solid #098e9f;
-  transform: rotate(45deg);
-  margin: 20px;
+  padding: 10px 25px;
+  margin: 10px;
+  font-size: 18px;
+
+  font-weight: bold;
+  /*background: green;*/
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+  -webkit-transition: box-shadow 0.5s;
+}
+
+.sec-one .icon-group .icon:hover {
+  box-shadow: 0px 0px 20px orange;
 }
 
 .sec-one .icon-group {
@@ -128,14 +181,13 @@ button {
 
 .sec-two .article-pre > div {
   float: left;
-  /*font-size: 0px;*/
 }
 
 .sec-two .article-pre:nth-child(odd) {
   background: rgba(255, 255, 255, 0.05);
 }
 
-.clear {
+.clearfix:after {
   content: '';
   display: block;
   clear: both;
@@ -165,12 +217,6 @@ button {
   margin-top: 0px;
 }
 
-.text-sec p {
-  font-size: 18px;
-  letter-spacing: 1px;
-  color: #fff;
-}
-
 .sec-three {
   background: #3f3965;
   color: #fff;
@@ -187,6 +233,104 @@ button {
   width: 60%;
 }
 
+.card {
+  float: left;
+  width: 50%;
+  min-height: 300px;
+  padding: 50px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.card:first-child {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.card:nth-child(2) {
+  background: rgba(0, 0, 0, 0.09);
+}
+
+.card:nth-child(3) {
+  background: rgba(0, 0, 0, 0.13);
+}
+
+.card:nth-child(4) {
+  background: rgba(0, 0, 0, 0.17);
+}
+
+.card:nth-child(5) {
+  background: rgba(0, 0, 0, 0.20);
+}
+
+.card:nth-child(6) {
+  background: rgba(0, 0, 0, 0.24);
+}
+
 .content {
   font-size: 0;
+}
+
+footer {
+  background: #333;
+  min-height: 200px;
+  text-align: center;
+}
+
+ul.share-list {
+  display: block;
+  width: 1080px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+ul.share-list li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.copy {
+  padding-bottom: 10px;
+}
+
+#sidebar {
+  width: 300px;
+  background: #333;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -300px;;
+  padding: 20px 0;
+  transition: right 0.5s;
+}
+
+#sidebar ul li {
+  padding: 10px 20px;
+  /*width: 100%;*/
+}
+
+#sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+}
+
+#sidebar ul li:hover {
+  background: #444;
+}
+
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 3px;
 }

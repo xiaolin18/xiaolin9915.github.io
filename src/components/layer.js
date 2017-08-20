@@ -1,6 +1,7 @@
 import tpl from './layer.html';
 import '../assets/file/reset.css';
 import '../assets/main.css';
+import './main.js';
 
 function layer() {
   return {
